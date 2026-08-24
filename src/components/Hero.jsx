@@ -16,7 +16,7 @@ const Hero = ({ onPreloadComplete }) => {
     document.body.style.overflow = 'hidden';
 
     const target = "PORTFOLIO";
-    const start = "HASSAN";
+    const start = "MOHAMED";
     let iterations = 0;
     let intervalId;
     let timeoutId;
