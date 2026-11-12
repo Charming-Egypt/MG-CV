@@ -25,3 +25,8 @@ npm run build
 - فورم التواصل بيفتح تطبيق الإيميل عند الزائر بالرسالة جاهزة. لو عايز الرسائل توصلك مباشرة، اعمل حساب على EmailJS وحط المتغيرات الثلاثة الموجودة في `.env.example` في Environment variables بتاعة Cloudflare.
 - لتغيير الصورة: استبدل `src/assets/hero_assets/me.jpg` و `src/assets/about_section/me.jpg` بصورة أعلى جودة (يفضل 1200px عرض أو أكتر).
 - ملف الـ CV موجود في `public/Mohamed-Gamal-CV.pdf` وبيتحمّل من الزر في الموقع.
+
+## لو Cloudflare عرض لك Workers Builds (Deploy command: npx wrangler deploy)
+- Root directory: سيبه فاضي (مش `dist`!)
+- Build command: `npm run build`
+- Deploy command: `npx wrangler deploy` (ملف `wrangler.jsonc` الموجود في المشروع بيشاور على مجلد `dist` تلقائياً)
