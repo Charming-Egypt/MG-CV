@@ -149,7 +149,7 @@ const Hero = ({ onPreloadComplete }) => {
         <img
           src={centerImage}
           alt="Mohamed Gamal Abd El-Mohsen"
-          className="w-[70vw] max-w-[16rem] sm:max-w-xs md:max-w-sm object-cover rounded-t-[2rem] border border-b-0 border-[#ccff00]/40 shadow-[0_20px_50px_rgba(0,0,0,0.5)] [mask-image:linear-gradient(to_bottom,black_70%,transparent)]"
+          className="w-[90vw] max-w-sm md:max-w-lg object-cover [mask-image:linear-gradient(to_bottom,black_75%,transparent)]"
         />
       </div>
     </section>
