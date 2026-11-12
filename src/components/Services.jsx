@@ -5,104 +5,69 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const processSteps = [
-  {
-    number: "01",
-    title: "Define",
-    description: "Understanding your goals, user requirements, and technical constraints to lay a rock-solid foundation for the project."
-  },
-  {
-    number: "02",
-    title: "Design",
-    description: "Creating intuitive, pixel-perfect user interfaces and wireframes that guarantee an engaging and accessible user experience."
-  },
-  {
-    number: "03",
-    title: "Build",
-    description: "Developing scalable frontend architectures and secure backend systems using the latest modern tech stack."
-  },
-  {
-    number: "04",
-    title: "Launch",
-    description: "Rigorous testing, performance optimization, and seamless deployment to cloud infrastructure followed by ongoing support."
-  }
+  { number: "01", title: "Guest Relations", description: "Hospitality, empathy and cultural awareness — a warm first impression for every guest." },
+  { number: "02", title: "Conflict Resolution", description: "Handling complaints diplomatically and turning concerns into positive experiences." },
+  { number: "03", title: "Front Office Operations", description: "Reservations, schedules and billing handled with accuracy across hotel management systems." },
+  { number: "04", title: "Sales & Upselling", description: "Promoting hotel services and experiences while guiding and motivating reception teams." }
 ];
 
 const servicesData = [
   {
     id: '01',
-    title: 'FULL STACK WEB DEVELOPMENT',
-    description: 'I build scalable, high-performance web applications using modern frontend frameworks like React.js, coupled with robust backend architecture powered by Node.js, Express, MySQL, MongoDB, and Supabase databases.',
+    title: 'CATARACT RESORT & LAYALINA HOTELS',
+    description: 'Guest Services Agent · 2025 – Present · Sharm El Sheikh. Front desk and guest services: managing reception operations, reservations and billing with accuracy, and resolving guest concerns diplomatically.',
     capabilities: [
-      'Responsive Web Apps with React.js & Tailwind CSS',
-      'Scalable Server Architecture with Node.js & Express',
-      'Database Design & Optimization with MySQL & MongoDB',
-      'Supabase Realtime Subscriptions & Auth Integration',
-      'Clean, Production-Ready Codebase'
+      'Reception operations & guest service',
+      'Reservations, schedules & billing accuracy',
+      'Diplomatic complaint handling',
+      'Warm first impressions & upselling'
     ],
-    buttonText: 'VIEW PROJECTS',
-    buttonHref: '#project'
+    buttonText: 'DOWNLOAD CV',
+    buttonHref: '/Mohamed-Gamal-CV.pdf'
   },
   {
     id: '02',
-    title: 'CROSS-PLATFORM MOBILE DEVELOPMENT',
-    description: 'I build fast, responsive mobile applications for iOS and Android using React Native and Expo, featuring smooth animations, offline state management, dynamic parallax scrolling, and intuitive user interfaces.',
+    title: 'AMARINA RESORT',
+    description: 'Guest Services Agent · 2024 – 2025 · Sharm El Sheikh. Front desk and guest services: managing reception operations, reservations and billing with accuracy, and resolving guest concerns diplomatically.',
     capabilities: [
-      'React Native & Expo Ecosystem',
-      'iOS & Android Cross-Platform UI/UX',
-      'Native Feature & API Integration',
-      'Smooth Parallax & Gesture Animations',
-      'State Management & Local Caching'
+      'Reception operations & guest service',
+      'Reservations, schedules & billing accuracy',
+      'Diplomatic complaint handling',
+      'Warm first impressions & upselling'
     ]
   },
   {
     id: '03',
-    title: '3D INTERACTIVE & CANVAS ANIMATIONS',
-    description: 'I craft immersive 3D web experiences using Three.js, React Three Fiber (R3F), and GSAP ScrollTrigger, bringing websites to life with spatial 3D models, custom shaders, dynamic lighting, and camera animations.',
+    title: 'GHAZALA GARDENS',
+    description: 'Guest Services Agent · 2023 – 2024 · Sharm El Sheikh. Front desk and guest services: managing reception operations, reservations and billing with accuracy, and resolving guest concerns diplomatically.',
     capabilities: [
-      'Three.js & React Three Fiber (R3F)',
-      'GSAP ScrollTrigger & Timeline Animations',
-      'Interactive 3D Models & Lighting',
-      'Canvas & Parallax Motion Effects',
-      'Smooth 60FPS Performance Optimization'
+      'Reception operations & guest service',
+      'Reservations, schedules & billing accuracy',
+      'Diplomatic complaint handling',
+      'Warm first impressions & upselling'
     ]
   },
   {
     id: '04',
-    title: 'BACKEND ARCHITECTURE & DATABASES',
-    description: 'I architect secure and reliable server-side systems with well-structured relational (MySQL) and NoSQL (MongoDB, Supabase) databases to handle authentication, real-time data streaming, and security.',
+    title: 'GHAZALA BEACH',
+    description: 'Guest Services Agent · 2022 – 2023 · Sharm El Sheikh. Front desk and guest services: managing reception operations, reservations and billing with accuracy, and resolving guest concerns diplomatically.',
     capabilities: [
-      'Node.js & Express Server Development',
-      'MySQL Database Schema Design & Queries',
-      'MongoDB & Supabase Backend Integration',
-      'JWT Authentication & Row Level Security',
-      'API Performance & Optimization'
+      'Reception operations & guest service',
+      'Reservations, schedules & billing accuracy',
+      'Diplomatic complaint handling',
+      'Warm first impressions & upselling'
     ]
   },
   {
     id: '05',
-    title: 'E-COMMERCE & BUSINESS PLATFORMS',
-    description: 'I create custom full-stack solutions including boutique e-commerce stores, restaurant ordering systems, event booking engines, social community platforms, and personal asset management tools.',
+    title: 'VODAFONE CALL CENTER',
+    description: 'Customer Service Agent · 2021 – 2022 · Asyut. A year in a high-volume telecom call center, building the speed, patience and communication skills that carry into guest services.',
     capabilities: [
-      'Custom Shopping Cart & Checkout Systems',
-      'Restaurant Ordering & Food Delivery Apps',
-      'Ticket Booking & Reservation Engines',
-      'Financial Trackers & Asset Dashboards',
-      'Multi-User Social & Directory Engines'
+      'High-volume customer support',
+      'Clear, calm communication',
+      'Problem-solving under pressure',
+      'Time management in fast-paced shifts'
     ]
-  },
-  {
-    id: '06',
-    title: 'TALKING VIDEO & AI AVATAR PORTFOLIOS',
-    description: 'I design interactive video portfolio applications and AI-driven avatar experiences that engage visitors with real-time video presentation, speech synthesis, dynamic multimedia showcases, and custom video player controls.',
-    capabilities: [
-      'Interactive Talking Video Presentation',
-      'Framer Motion & AOS Scroll Animations',
-      'AI Video Integration & Speech Sync',
-      'Custom Video Player Controls & Playback',
-      'Responsive Web Portfolio Layouts'
-    ],
-    buttonText: 'SEE DEMO PORTFOLIO',
-    buttonHref: 'https://talking-video-portfolio.vercel.app/'
   }
 ];
 
@@ -186,12 +151,12 @@ const Services = () => {
   }, []);
 
   return (
-    <section id="service" className="md:min-h-screen bg-[#050505] text-white pt-12 pb-12 md:pb-24 px-6 md:px-16 flex flex-col relative overflow-hidden">
+    <section id="experience" className="md:min-h-screen bg-[#050505] text-white pt-12 pb-12 md:pb-24 px-6 md:px-16 flex flex-col relative overflow-hidden">
       
       {/* Process Workflow Banner */}
       <div className="mb-16">
         <h3 className="text-xs md:text-sm font-bold tracking-widest text-[#ccff00] uppercase mb-8">
-          OUR DEVELOPMENT PROCESS
+          CORE COMPETENCIES
         </h3>
         <div ref={processGridRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {processSteps.map((step) => (
@@ -218,7 +183,7 @@ const Services = () => {
         {/* Giant Title */}
         <div className="flex flex-col md:flex-row items-start justify-end gap-2 md:gap-4 lg:gap-8 pr-2 md:pr-0 text-right">
           <h2 ref={titleRef} className="text-3xl sm:text-4xl md:text-7xl lg:text-8xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-gray-300 to-gray-800 drop-shadow-2xl leading-[1.1] md:leading-[0.9] text-right">
-            WHAT WE<br/>CAN DO
+            MY<br/>EXPERIENCE
           </h2>
         </div>
       </div>
@@ -319,8 +284,8 @@ const Services = () => {
                      </p>
                      {service.buttonText && (
                        <a 
-                         href={service.buttonHref || "#project"} 
-                         target={service.buttonHref?.startsWith('http') ? '_blank' : '_self'}
+                         href={service.buttonHref || "#projects"} 
+                         target={service.buttonHref?.startsWith('http') || buttonHref?.endsWith('.pdf') ? '_blank' : '_self'}
                          rel="noopener noreferrer"
                          className={`font-bold uppercase tracking-wider text-xs md:text-sm px-6 py-3 border transition-colors duration-300 ease-in-out inline-flex items-center gap-2 mt-4 cursor-pointer ${
                            isHighlighted ? 'bg-black text-[#ccff00] border-black hover:bg-black/90' : 'bg-[#ccff00] text-black border-[#ccff00] hover:bg-[#b3e600]'

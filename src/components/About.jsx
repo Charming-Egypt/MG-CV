@@ -1,27 +1,26 @@
 import React, { useEffect, useRef } from 'react';
-import aboutImage from '../assets/about_section/about_section.png';
+import aboutImage from '../assets/about_section/me.jpg';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const frontendSkills = ["React.js", "TypeScript", "JavaScript", "Tailwind CSS", "Three.js", "R3F", "GSAP Animations", "HTML5", "CSS3"];
-const backendSkills = ["Node.js", "Express.js", "MySQL", "MongoDB", "Supabase", "REST APIs", "Database Design", "JWT Auth"];
-const mobileSkills = ["React Native", "Expo", "Mobile Development", "Cross-Platform", "iOS & Android", "UI Components", "Parallax Scroll"];
-const toolsSkills = ["Git", "GitHub", "Vercel", "Postman", "VS Code", "npm", "AOS Animations", "Git Workflow"];
+const frontendSkills = ["Guest Relations", "Front Office Operations", "Reservations", "Billing Accuracy", "Hotel Systems", "First Impressions"];
+const backendSkills = ["Conflict Resolution", "Sales & Upselling", "Team Leadership", "Time Management", "Problem-Solving", "Empathy"];
+const mobileSkills = ["Arabic — Native", "English — Professional", "Cultural Awareness", "Customer Service", "Call Center Experience"];
+const toolsSkills = ["Coding", "Mobile Apps", "Tourism Websites", "Graphic Design", "Drawing", "Reading"];
 
 const aboutWords = [
-  { text: "Hey," }, { text: "I'm" },
-  { text: "Syed Hassan Dildar.", className: "font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400" },
-  { text: "A" }, { text: "Full-Stack" }, { text: "Developer" }, { text: "specializing" }, { text: "in" }, { text: "building" }, { text: "scalable" }, { text: "web," }, { text: "mobile," }, { text: "and" }, { text: "3D" }, { text: "applications" }, { text: "using" },
-  { text: "React,", className: "text-white font-medium" },
-  { text: "React Native,", className: "text-white font-medium" },
-  { text: "Node.js,", className: "text-white font-medium" },
-  { text: "MySQL,", className: "text-white font-medium" },
-  { text: "MongoDB,", className: "text-white font-medium" },
-  { text: "and" },
-  { text: "Supabase.", className: "text-white font-medium" },
-  { text: "I" }, { text: "focus" }, { text: "on" }, { text: "delivering" }, { text: "clean" }, { text: "code," }, { text: "pixel-perfect" }, { text: "UI/UX" }, { text: "design," }, { text: "and" }, { text: "production-ready" }, { text: "digital" }, { text: "experiences." }
+  { text: "Hello," }, { text: "I'm" },
+  { text: "Mohamed Gamal Abd El-Mohsen.", className: "font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400" },
+  { text: "A" }, { text: "polished," }, { text: "service-driven" }, { text: "hospitality" }, { text: "professional" }, { text: "with" }, { text: "over" }, { text: "four" }, { text: "years" }, { text: "in" },
+  { text: "front desk", className: "text-white font-medium" }, { text: "and" }, { text: "guest services,", className: "text-white font-medium" },
+  { text: "across" }, { text: "leading" }, { text: "Sharm" }, { text: "El" }, { text: "Sheikh" }, { text: "resorts," },
+  { text: "preceded" }, { text: "by" }, { text: "a" }, { text: "year" }, { text: "in" }, { text: "a" }, { text: "high-volume" }, { text: "telecom" }, { text: "call" }, { text: "center." },
+  { text: "I" }, { text: "handle" }, { text: "reception," }, { text: "reservations" }, { text: "and" }, { text: "billing" }, { text: "with" }, { text: "accuracy," }, { text: "resolve" }, { text: "concerns" }, { text: "diplomatically," }, { text: "and" }, { text: "make" }, { text: "every" }, { text: "arrival" }, { text: "feel" }, { text: "warm." },
+  { text: "I'm" }, { text: "also" }, { text: "a" }, { text: "self-taught" },
+  { text: "developer", className: "text-white font-medium" },
+  { text: "building" }, { text: "tourism" }, { text: "and" }, { text: "mobile" }, { text: "applications." }
 ];
 
 const About = () => {
@@ -140,8 +139,8 @@ const About = () => {
           <div ref={imageRef} className="flex justify-center lg:justify-start pl-0 lg:pl-16">
             <img
               src={aboutImage}
-              alt="About"
-              className="w-56 md:w-64 lg:w-80 object-contain drop-shadow-2xl"
+              alt="Mohamed Gamal Abd El-Mohsen"
+              className="w-56 md:w-64 lg:w-80 object-cover rounded-3xl border border-[#ccff00]/30 shadow-2xl"
             />
           </div>
 

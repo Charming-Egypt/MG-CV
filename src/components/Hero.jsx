@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import centerImage from '../assets/hero_assets/hero_center.png';
+import centerImage from '../assets/hero_assets/me.jpg';
 
 const Hero = ({ onPreloadComplete }) => {
-  const [text, setText] = useState('HASSAN');
+  const [text, setText] = useState('MOHAMED');
   const containerRef = useRef(null);
   const textRef = useRef(null);
   const subtitleRef = useRef(null);
@@ -102,6 +102,7 @@ const Hero = ({ onPreloadComplete }) => {
 
   return (
     <section
+      id="home"
       className="relative min-h-screen flex items-end justify-center bg-cover bg-center bg-no-repeat overflow-hidden"
       style={{ background: 'radial-gradient(circle, #222222 0%, #000000 80%)' }}
     >
@@ -122,7 +123,7 @@ const Hero = ({ onPreloadComplete }) => {
           ref={subtitleRef}
           className="absolute -bottom-7 md:-bottom-12 left-1/2 -translate-x-1/2 md:translate-x-0 md:left-8 text-white text-xs sm:text-sm md:text-2xl lg:text-4xl drop-shadow-md z-10 opacity-0 w-max text-center md:text-left tracking-wide"
         >
-          <span className="font-bold">Full-Stack</span> <span className="font-light italic text-gray-300">Developer</span>
+          <span className="font-bold">Guest Services</span> <span className="font-light italic text-gray-300">Professional</span>
         </p>
 
         <div
@@ -147,8 +148,8 @@ const Hero = ({ onPreloadComplete }) => {
       >
         <img
           src={centerImage}
-          alt="Hero Center Graphic"
-          className="w-[80vw] max-w-xs sm:max-w-sm md:max-w-md object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
+          alt="Mohamed Gamal Abd El-Mohsen"
+          className="w-[70vw] max-w-[16rem] sm:max-w-xs md:max-w-sm object-cover rounded-t-[2rem] border border-b-0 border-[#ccff00]/40 shadow-[0_20px_50px_rgba(0,0,0,0.5)] [mask-image:linear-gradient(to_bottom,black_70%,transparent)]"
         />
       </div>
     </section>

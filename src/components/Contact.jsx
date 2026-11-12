@@ -65,6 +65,17 @@ const ContactSection = () => {
             return;
         }
 
+        const { VITE_EMAILJS_SERVICE_ID: sid, VITE_EMAILJS_TEMPLATE_ID: tid, VITE_EMAILJS_PUBLIC_KEY: key } = import.meta.env;
+        if (!sid || !tid || !key) {
+            // No EmailJS configured: open the visitor's email app with the message pre-filled.
+            const subject = formData.get('subject') || `Message from ${name}`;
+            const phone = formData.get('phone');
+            const body = `${message}\n\n— ${name}\n${email}${phone ? `\n${phone}` : ''}`;
+            window.location.href = `mailto:gm@discover-sharm.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            setStatusMessage({ text: 'Opening your email app...', type: 'success' });
+            return;
+        }
+
         setIsSubmitting(true);
         setStatusMessage({ text: '', type: '' });
 
@@ -116,37 +127,40 @@ const ContactSection = () => {
                         {/* Email */}
                         <div className="block">
                             <p className="text-gray-400 text-sm mb-2">Email:</p>
-                            <a href="mailto:msgoat550@gmail.com" className="text-lg md:text-xl tracking-wide hover:text-[#ccff00] transition-colors break-all">msgoat550@gmail.com</a>
+                            <a href="mailto:gm@discover-sharm.com" className="text-lg md:text-xl tracking-wide hover:text-[#ccff00] transition-colors break-all">gm@discover-sharm.com</a>
                         </div>
 
-                        {/* Phone / Role */}
+                        {/* Phone */}
+                        <div className="block">
+                            <p className="text-gray-400 text-sm mb-2">Phone:</p>
+                            <a href="tel:+201061693679" className="text-lg md:text-xl tracking-wide hover:text-[#ccff00] transition-colors">+20 106 169 3679</a>
+                        </div>
+
+                        {/* Role / Location */}
                         <div className="block">
                             <p className="text-gray-400 text-sm mb-2">Role:</p>
-                            <p className="text-lg md:text-xl tracking-wide">Full-Stack Developer</p>
+                            <p className="text-lg md:text-xl tracking-wide">Guest Services &amp; Front Office Professional</p>
+                            <p className="text-gray-400 text-sm mt-1">Sharm El Sheikh, Egypt</p>
                         </div>
 
                         {/* Follow Us */}
                         <div className="mt-2 md:mt-4 flex flex-col items-start">
-                            <p className="text-gray-400 text-sm mb-4">Follow us</p>
+                            <p className="text-gray-400 text-sm mb-4">Find me online</p>
                             <div className="flex items-center justify-start gap-3">
-                                <a href="https://www.instagram.com/hxniii_syed?igsh=MWJsY2FmYW1na3Nubw==" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+                                <a href="https://www.discover-sharm.com" target="_blank" rel="noopener noreferrer" aria-label="Discover Sharm website" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
-                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="M2 12h20"/>
+                                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
                                     </svg>
                                 </a>
-                                <a href="https://www.linkedin.com/in/syed-hassan-dildar-b40649400" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+                                <a href="tel:+201061693679" aria-label="Call" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                                        <rect width="4" height="12" x="2" y="9"/>
-                                        <circle cx="4" cy="4" r="2"/>
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.62a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.46-1.19a2 2 0 0 1 2.11-.45c.84.29 1.72.5 2.62.62A2 2 0 0 1 22 16.92z"/>
                                     </svg>
                                 </a>
-                                <a href="https://github.com/Hxni786" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                    </svg>
+                                <a href="/Mohamed-Gamal-CV.pdf" target="_blank" rel="noopener noreferrer" aria-label="Download CV" className="h-10 px-4 rounded-full bg-white/10 flex items-center justify-center text-xs font-medium hover:bg-white/20 transition-colors">
+                                    CV
                                 </a>
                             </div>
                         </div>

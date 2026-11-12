@@ -4,165 +4,54 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
+import discoverImg from '../assets/projects/discover-sharm.svg';
+import waslaImg from '../assets/projects/wasla.svg';
+import quranImg from '../assets/projects/quran.svg';
+
 const projects = [
   {
-    name: 'Talking Video Portfolio',
+    name: 'Discover Sharm',
     title: (
       <>
-        TALKING VIDEO <br />
-        <span className="font-light italic text-gray-300 font-serif">Portfolio</span>
+        DISCOVER <br />
+        <span className="font-light italic text-gray-300 font-serif">Sharm</span>
       </>
     ),
-    category: "AI Video & Interactive Web Experience",
-    tools: "React, Framer Motion, AOS, Tailwind CSS, Vercel",
-    description: "An interactive video portfolio platform featuring real-time talking presenter videos, dynamic motion animations, smooth scroll interactions, and modern web presentation.",
-    image: "https://raw.githubusercontent.com/Hxni786/Talking-Video-Portfolio/main/hero_screenshot.jpg",
-    githubLink: "https://github.com/Hxni786/Talking-Video-Portfolio",
-    liveDemoLink: "https://talking-video-portfolio.vercel.app/"
+    category: "Tourism Website & App",
+    tools: "Web & Mobile",
+    description: "Application and website promoting Egyptian tourism and trips in Sharm El Sheikh.",
+    image: discoverImg,
+    liveDemoLink: "https://www.discover-sharm.com"
   },
   {
-    name: 'Spice with Hassan',
+    name: 'Wasla Vodacodes',
     title: (
       <>
-        SPICE WITH <br />
-        <span className="font-light italic text-gray-300 font-serif">Hassan</span>
+        WASLA <br />
+        <span className="font-light italic text-gray-300 font-serif">Vodacodes</span>
       </>
     ),
-    category: "Boutique Restaurant & Ordering Management",
-    tools: "React Native, Node.js, Express, MySQL",
-    description: "A full-stack restaurant management and food ordering application featuring dish customization, interactive menu browsing, live order tracking, and clean database architecture.",
-    image: "https://raw.githubusercontent.com/Hxni786/Hxni-Ecommerce-Store/main/profile_docs/assets/spice_hassan_mockup.png",
-    githubLink: "https://github.com/Hxni786/-A-Restaurant-App-Spice-with-Hassan"
+    category: "Training App",
+    tools: "Vodafone Call Center",
+    description: "Training app for Vodafone call center agents.",
+    image: waslaImg
   },
   {
-    name: 'Editorial Excellence',
+    name: 'Online Holy Quran',
     title: (
       <>
-        EDITORIAL <br />
-        <span className="font-light italic text-gray-300 font-serif">Excellence</span>
+        ONLINE HOLY <br />
+        <span className="font-light italic text-gray-300 font-serif">Quran</span>
       </>
     ),
-    category: "Full-Stack Boutique E-commerce Platform",
-    tools: "React, Node.js, Express, MySQL, Tailwind",
-    description: "Modern full-stack e-commerce web application featuring comprehensive product management, shopping cart functionality, user checkout, and robust database structure.",
-    image: "https://raw.githubusercontent.com/Hxni786/Hxni-Ecommerce-Store/main/screenshot_home.png",
-    githubLink: "https://github.com/Hxni786/Hxni-Ecommerce-Store"
-  },
-  {
-    name: 'Bespoke E-store 2.0',
-    title: (
-      <>
-        BESPOKE <br />
-        <span className="font-light italic text-gray-300 font-serif">E-Store 2.0</span>
-      </>
-    ),
-    category: "Luxury Minimalist Mobile Commerce",
-    tools: "React Native, Expo, Node.js, REST API",
-    description: "Cross-platform mobile e-commerce platform offering an intuitive minimalist UI, product catalog, cart flows, and seamless checkout experience.",
-    image: "https://raw.githubusercontent.com/Hxni786/E-store2/main/docs/ui-preview.png",
-    githubLink: "https://github.com/Hxni786/E-store2"
-  },
-  {
-    name: 'hxni Express',
-    title: (
-      <>
-        HXNI <br />
-        <span className="font-light italic text-gray-300 font-serif">Express</span>
-      </>
-    ),
-    category: "Cinematic Parallax Food Delivery Experience",
-    tools: "React Native, Expo, GSAP, Parallax Scroll",
-    description: "Mobile food delivery app built with cinematic parallax animations, smooth scroll interactions, and modular React Native components.",
-    image: "https://raw.githubusercontent.com/Hxni786/Hxni-Ecommerce-Store/main/profile_docs/assets/hxni_express_mockup.png",
-    githubLink: "https://github.com/Hxni786/A-food-Delivery-App-hxni-express"
-  },
-  {
-    name: 'NIXH Social',
-    title: (
-      <>
-        NIXH <br />
-        <span className="font-light italic text-gray-300 font-serif">Social Engine</span>
-      </>
-    ),
-    category: "Enterprise Multi-User Directory & Social Engine",
-    tools: "React Native, Firebase, Node.js, REST API",
-    description: "Scalable social directory mobile application featuring user authentication, user profiles, search, real-time messaging, and multi-user interactions.",
-    image: "https://raw.githubusercontent.com/Hxni786/Nixh-A-social-Media-App/main/docs/assets/mobile_mockup.png",
-    githubLink: "https://github.com/Hxni786/Nixh-A-social-Media-App"
-  },
-  {
-    name: 'TicketVerse',
-    title: (
-      <>
-        TICKET <br />
-        <span className="font-light italic text-gray-300 font-serif">Verse</span>
-      </>
-    ),
-    category: "Premium Full-Stack Event Booking Engine",
-    tools: "React Native, Node.js, Express, MySQL",
-    description: "Full-stack event ticket booking platform featuring seat selections, digital ticket generation, secure checkout, and event management dashboard.",
-    image: "https://raw.githubusercontent.com/Hxni786/Ticket-Booking-App/main/mobile/assets/promo1.png",
-    githubLink: "https://github.com/Hxni786/Ticket-Booking-App"
-  },
-  {
-    name: 'Nixh Food 2.0',
-    title: (
-      <>
-        NIXH FOOD <br />
-        <span className="font-light italic text-gray-300 font-serif">2.0 Ecosystem</span>
-      </>
-    ),
-    category: "Scalable Order Tracking & Delivery Ecosystem",
-    tools: "React Native, Node.js, Express, REST API",
-    description: "End-to-end food ordering and delivery ecosystem with real-time order status tracking, kitchen updates, and streamlined user navigation.",
-    image: "https://raw.githubusercontent.com/Hxni786/Food-Delivery-app-2/main/hero.png",
-    githubLink: "https://github.com/Hxni786/Food-Delivery-app-2"
-  },
-  {
-    name: 'Hxni Finance',
-    title: (
-      <>
-        HXNI <br />
-        <span className="font-light italic text-gray-300 font-serif">Finance</span>
-      </>
-    ),
-    category: "Advanced Personal Asset & Expense Management",
-    tools: "React Native, Node.js, MySQL, Chart.js",
-    description: "Comprehensive personal finance manager providing automated budget tracking, expense analytics, visual category breakdowns, and financial reporting.",
-    image: "https://raw.githubusercontent.com/Hxni786/Hxni-Ecommerce-Store/main/profile_docs/assets/hxni_finance_mockup.png",
-    githubLink: "https://github.com/Hxni786/Expense-Tracker"
-  },
-  {
-    name: 'Hxnix Social App',
-    title: (
-      <>
-        HXNIX <br />
-        <span className="font-light italic text-gray-300 font-serif">Community App</span>
-      </>
-    ),
-    category: "Modern Interactive Community Engine",
-    tools: "React Native, Firebase, Node.js, Express",
-    description: "Cross-platform mobile community app enabling real-time content sharing, user interaction, notifications, and profile customization.",
-    image: "https://raw.githubusercontent.com/Hxni786/Hxni-Ecommerce-Store/main/profile_docs/assets/hxnix_social_mockup.png",
-    githubLink: "https://github.com/Hxni786/Hxnix-Social-Media-App"
-  },
-  {
-    name: '3D Interactive Portfolio',
-    title: (
-      <>
-        3D INTERACTIVE <br />
-        <span className="font-light italic text-gray-300 font-serif">Portfolio</span>
-      </>
-    ),
-    category: "Interactive 3D Web Portfolio Experience",
-    tools: "React, Three.js, GSAP, Tailwind CSS",
-    description: "Immersive 3D interactive web portfolio showcasing projects with 3D model rendering, spatial navigation, dynamic lighting, and interactive animations.",
-    image: "https://raw.githubusercontent.com/Hxni786/3d-portfolio-main/main/public/images/preview.png",
-    githubLink: "https://github.com/Hxni786/3d-portfolio-main"
+    category: "Android App",
+    tools: "Mobile",
+    description: "Online Quran application for Android users.",
+    image: quranImg
   }
 ];
 
-const Project = ({ onCtaClick }) => {
+const Project = () => {
   const headerRef = useRef(null);
   const cardRefs = useRef([]);
 
@@ -245,7 +134,7 @@ const Project = ({ onCtaClick }) => {
   }, []);
 
   return (
-    <div id="project" className="bg-[#050505] w-full text-white pt-10 md:pt-20 pb-24 px-6 md:px-16">
+    <div id="projects" className="bg-[#050505] w-full text-white pt-10 md:pt-20 pb-24 px-6 md:px-16">
 
       {/* Top Header Section */}
       <div ref={headerRef} className="flex flex-col lg:flex-row justify-between items-start w-full z-10 gap-8 lg:gap-0 mb-16 lg:mb-32">
@@ -261,14 +150,14 @@ const Project = ({ onCtaClick }) => {
         {/* Right Description */}
         <div className="w-full lg:w-4/12 flex flex-col items-start lg:mt-4">
           <p className="text-gray-300 text-sm md:text-base font-light leading-relaxed mb-6 md:mb-8">
-            As a frontend developer using modern ideas, simplicity design and universal visual identification tailored to dedicated and current market.
+            A self-taught developer, I build tourism and mobile applications alongside my career in hospitality.
           </p>
-          <button onClick={onCtaClick} className="cursor-pointer px-6 py-2.5 rounded-full border border-[#ccff00] bg-[#ccff00] text-black font-medium text-xs md:text-sm hover:bg-[#b3e600] hover:border-[#b3e600] transition-colors flex items-center gap-2">
-            Read More
+          <a href="#contact" className="cursor-pointer px-6 py-2.5 rounded-full border border-[#ccff00] bg-[#ccff00] text-black font-medium text-xs md:text-sm hover:bg-[#b3e600] hover:border-[#b3e600] transition-colors flex items-center gap-2">
+            Get in touch
             <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
             </svg>
-          </button>
+          </a>
         </div>
       </div>
 
@@ -313,30 +202,21 @@ const Project = ({ onCtaClick }) => {
                   {proj.description}
                 </p>
 
-                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 w-full">
-                  <a 
-                    href={proj.liveDemoLink || proj.githubLink} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="cursor-pointer px-6 py-3 rounded-full border border-[#ccff00] bg-[#ccff00] text-black text-xs md:text-sm font-medium hover:bg-[#b3e600] hover:border-[#b3e600] transition-colors flex items-center justify-center gap-2 text-center"
-                  >
-                    {proj.liveDemoLink ? "Live Demo" : "Live Repository"}
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-                    </svg>
-                  </a>
-                  <a 
-                    href={proj.githubLink} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="cursor-pointer px-6 py-3 rounded-full border border-white/30 text-white text-xs md:text-sm hover:bg-white hover:text-black transition-colors flex items-center justify-center gap-2 text-center"
-                  >
-                    GitHub Code
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                  </a>
-                </div>
+                {proj.liveDemoLink && (
+                  <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 w-full">
+                    <a
+                      href={proj.liveDemoLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="cursor-pointer px-6 py-3 rounded-full border border-[#ccff00] bg-[#ccff00] text-black text-xs md:text-sm font-medium hover:bg-[#b3e600] hover:border-[#b3e600] transition-colors flex items-center justify-center gap-2 text-center"
+                    >
+                      Visit Website
+                      <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                      </svg>
+                    </a>
+                  </div>
+                )}
               </div>
 
             </div>

@@ -21,23 +21,23 @@ const Footer = () => {
           <div className="flex flex-col gap-6 w-full md:w-auto">
             <div>
               <p className="text-gray-400 text-sm mb-2">Connect with me</p>
-              <a href="mailto:msgoat550@gmail.com" className="text-xl md:text-5xl font-medium hover:text-[#ccff00] transition-colors break-words">
-                msgoat550@gmail.com
+              <a href="mailto:gm@discover-sharm.com" className="text-xl md:text-5xl font-medium hover:text-[#ccff00] transition-colors break-words">
+                gm@discover-sharm.com
               </a>
             </div>
 
             <div className="flex flex-wrap gap-6 text-sm text-gray-300 mt-4">
               <a href="#home" className="hover:text-white transition-colors">Home</a>
               <a href="#about" className="hover:text-white transition-colors">About</a>
-              <a href="#services" className="hover:text-white transition-colors">Services</a>
-              <a href="#project" className="hover:text-white transition-colors">Projects</a>
+              <a href="#experience" className="hover:text-white transition-colors">Experience</a>
+              <a href="#projects" className="hover:text-white transition-colors">Projects</a>
             </div>
           </div>
 
           <div className="flex flex-col items-start md:items-end text-left md:text-right w-full md:w-auto mt-4 md:mt-0">
-            <h3 className="text-lg md:text-2xl font-medium mb-2">Let's build something</h3>
+            <h3 className="text-lg md:text-2xl font-medium mb-2">Let's work together</h3>
             <p className="text-gray-400 text-sm mb-6 max-w-xs">
-              Open for full-stack web and mobile development projects.
+              Open to guest services and front office opportunities.
             </p>
             <a href="#contact" className="bg-white text-black px-6 py-3 rounded-full text-sm font-medium hover:bg-[#ccff00] transition-colors">
               Get in touch
@@ -47,25 +47,22 @@ const Footer = () => {
 
         {/* Middle Section - Socials */}
         <div className="flex flex-wrap justify-between items-center py-6 border-t border-white/10 mb-4 text-sm md:text-lg font-medium">
-          <a href="https://www.instagram.com/hxniii_syed?igsh=MWJsY2FmYW1na3Nubw==" target="_blank" rel="noopener noreferrer" className="hover:text-[#ccff00] transition-colors">Instagram</a>
-          <a href="https://www.linkedin.com/in/syed-hassan-dildar-b40649400" target="_blank" rel="noopener noreferrer" className="hover:text-[#ccff00] transition-colors">LinkedIn</a>
-          <a href="https://github.com/Hxni786" target="_blank" rel="noopener noreferrer" className="hover:text-[#ccff00] transition-colors">GitHub</a>
+          <a href="https://www.discover-sharm.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#ccff00] transition-colors">Website</a>
+          <a href="tel:+201061693679" className="hover:text-[#ccff00] transition-colors">+20 106 169 3679</a>
+          <a href="/Mohamed-Gamal-CV.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-[#ccff00] transition-colors">Download CV</a>
         </div>
 
         {/* Huge Text Section */}
         <div className="w-full text-center flex-1 flex items-center justify-center min-h-0">
           <h1 className="text-[11vw] font-bold leading-none tracking-tighter" style={{ fontFamily: 'Inter, sans-serif' }}>
-            SYED HASSAN
+            MOHAMED GAMAL
           </h1>
         </div>
 
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center text-xs text-gray-400 mt-auto pt-6">
-          <p>© {new Date().getFullYear()} Syed Hassan Dildar. All Rights Reserved.</p>
-          <div className="flex gap-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-white transition-colors">Privacy policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms and conditions</a>
-          </div>
+          <p>© {new Date().getFullYear()} Mohamed Gamal Abd El-Mohsen. All Rights Reserved.</p>
+          <p className="mt-4 md:mt-0">Sharm El Sheikh, Egypt</p>
         </div>
       </div>
     </footer>
