@@ -21,7 +21,7 @@ const Footer = () => {
           <div className="flex flex-col gap-6 w-full md:w-auto">
             <div>
               <p className="text-gray-400 text-sm mb-2">Connect with me</p>
-              <a href="mailto:gm@discover-sharm.com" className="text-xl md:text-5xl font-medium hover:text-[#ccff00] transition-colors break-words">
+              <a href="mailto:gm@discover-sharm.com" className="text-xl md:text-5xl font-medium hover:text-[#ff7a1a] transition-colors break-words">
                 gm@discover-sharm.com
               </a>
             </div>
@@ -39,7 +39,7 @@ const Footer = () => {
             <p className="text-gray-400 text-sm mb-6 max-w-xs">
               Open to guest services and front office opportunities.
             </p>
-            <a href="#contact" className="bg-white text-black px-6 py-3 rounded-full text-sm font-medium hover:bg-[#ccff00] transition-colors">
+            <a href="#contact" className="bg-white text-black px-6 py-3 rounded-full text-sm font-medium hover:bg-[#ff7a1a] transition-colors">
               Get in touch
             </a>
           </div>
@@ -47,9 +47,9 @@ const Footer = () => {
 
         {/* Middle Section - Socials */}
         <div className="flex flex-wrap justify-between items-center py-6 border-t border-white/10 mb-4 text-sm md:text-lg font-medium">
-          <a href="https://www.discover-sharm.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#ccff00] transition-colors">Website</a>
-          <a href="tel:+201061693679" className="hover:text-[#ccff00] transition-colors">+20 106 169 3679</a>
-          <a href="/Mohamed-Gamal-CV.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-[#ccff00] transition-colors">Download CV</a>
+          <a href="https://www.discover-sharm.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#ff7a1a] transition-colors">Website</a>
+          <a href="tel:+201061693679" className="hover:text-[#ff7a1a] transition-colors">+20 106 169 3679</a>
+          <a href="/Mohamed-Gamal-CV.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-[#ff7a1a] transition-colors">Download CV</a>
         </div>
 
         {/* Huge Text Section */}

@@ -152,7 +152,7 @@ const Project = () => {
           <p className="text-gray-300 text-sm md:text-base font-light leading-relaxed mb-6 md:mb-8">
             A self-taught developer, I build tourism and mobile applications alongside my career in hospitality.
           </p>
-          <a href="#contact" className="cursor-pointer px-6 py-2.5 rounded-full border border-[#ccff00] bg-[#ccff00] text-black font-medium text-xs md:text-sm hover:bg-[#b3e600] hover:border-[#b3e600] transition-colors flex items-center gap-2">
+          <a href="#contact" className="cursor-pointer px-6 py-2.5 rounded-full border border-[#ff7a1a] bg-[#ff7a1a] text-black font-medium text-xs md:text-sm hover:bg-[#e8680f] hover:border-[#e8680f] transition-colors flex items-center gap-2">
             Get in touch
             <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
@@ -183,14 +183,14 @@ const Project = () => {
 
               {/* Text Side */}
               <div className="project-text-box w-full lg:w-5/12 flex flex-col items-start">
-                <span className="text-[#ccff00] text-xs md:text-sm font-bold tracking-widest uppercase mb-3 md:mb-4">
+                <span className="text-[#ff7a1a] text-xs md:text-sm font-bold tracking-widest uppercase mb-3 md:mb-4">
                   0{idx + 1}
                 </span>
                 <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tighter text-white leading-[1.1] uppercase mb-4 md:mb-6">
                   {proj.title}
                 </h3>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-[#ccff00]/10 text-[#ccff00] text-xs font-semibold px-3 py-1 rounded-full border border-[#ccff00]/20">
+                  <span className="bg-[#ff7a1a]/10 text-[#ff7a1a] text-xs font-semibold px-3 py-1 rounded-full border border-[#ff7a1a]/20">
                     {proj.category}
                   </span>
                   <span className="bg-white/10 text-gray-300 text-xs px-3 py-1 rounded-full border border-white/10">
@@ -208,7 +208,7 @@ const Project = () => {
                       href={proj.liveDemoLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="cursor-pointer px-6 py-3 rounded-full border border-[#ccff00] bg-[#ccff00] text-black text-xs md:text-sm font-medium hover:bg-[#b3e600] hover:border-[#b3e600] transition-colors flex items-center justify-center gap-2 text-center"
+                      className="cursor-pointer px-6 py-3 rounded-full border border-[#ff7a1a] bg-[#ff7a1a] text-black text-xs md:text-sm font-medium hover:bg-[#e8680f] hover:border-[#e8680f] transition-colors flex items-center justify-center gap-2 text-center"
                     >
                       Visit Website
                       <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

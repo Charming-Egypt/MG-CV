@@ -67,7 +67,7 @@ body {
 }
 
 .animate-water-fill {
-  background: linear-gradient(to top, #ccff00 50%, transparent 50%);
+  background: linear-gradient(to top, #ff7a1a 50%, transparent 50%);
   background-size: 100% 200%;
   background-position: 0% 0%;
   -webkit-background-clip: text;

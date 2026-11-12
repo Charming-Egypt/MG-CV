@@ -155,16 +155,16 @@ const Services = () => {
       
       {/* Process Workflow Banner */}
       <div className="mb-16">
-        <h3 className="text-xs md:text-sm font-bold tracking-widest text-[#ccff00] uppercase mb-8">
+        <h3 className="text-xs md:text-sm font-bold tracking-widest text-[#ff7a1a] uppercase mb-8">
           CORE COMPETENCIES
         </h3>
         <div ref={processGridRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {processSteps.map((step) => (
             <div 
               key={step.number} 
-              className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-[#ccff00]/50 hover:bg-white/[0.08] transition-all duration-300 group"
+              className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-[#ff7a1a]/50 hover:bg-white/[0.08] transition-all duration-300 group"
             >
-              <span className="text-3xl font-black text-[#ccff00] block mb-3 group-hover:scale-110 transition-transform origin-left">
+              <span className="text-3xl font-black text-[#ff7a1a] block mb-3 group-hover:scale-110 transition-transform origin-left">
                 {step.number}
               </span>
               <h4 className="text-xl font-bold uppercase mb-2 tracking-tight text-white">
@@ -199,7 +199,7 @@ const Services = () => {
             ref={(el) => itemRefs.current[index] = el}
             data-index={index}
             className={`border-b border-white/20 py-5 md:py-7 px-6 md:px-16 cursor-pointer transition-all duration-300 ease-in-out ${
-              isHighlighted ? 'bg-[#ccff00]' : ''
+              isHighlighted ? 'bg-[#ff7a1a]' : ''
             }`}
             onClick={() => setActiveIndex(activeIndex === index ? null : index)}
             onMouseEnter={() => setHoveredIndex(index)}
@@ -239,7 +239,7 @@ const Services = () => {
                           {service.capabilities.map((cap, i) => (
                             <li key={i} className="flex items-start gap-3">
                               <span className={`transition-colors duration-300 ease-in-out mt-1.5 opacity-70 text-[10px] ${
-                                isHighlighted ? 'text-black' : 'text-[#ccff00]'
+                                isHighlighted ? 'text-black' : 'text-[#ff7a1a]'
                               }`}>■</span>
                               <span>{cap}</span>
                             </li>
@@ -255,7 +255,7 @@ const Services = () => {
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     className={`w-6 h-6 transition-all duration-300 ${
-                      isHighlighted ? 'text-black' : 'text-[#ccff00]'
+                      isHighlighted ? 'text-black' : 'text-[#ff7a1a]'
                     } ${activeIndex === index ? '-rotate-45' : 'rotate-45'}`} 
                     fill="none" 
                     viewBox="0 0 24 24" 
@@ -288,7 +288,7 @@ const Services = () => {
                          target={service.buttonHref?.startsWith('http') || service.buttonHref?.endsWith('.pdf') ? '_blank' : '_self'}
                          rel="noopener noreferrer"
                          className={`font-bold uppercase tracking-wider text-xs md:text-sm px-6 py-3 border transition-colors duration-300 ease-in-out inline-flex items-center gap-2 mt-4 cursor-pointer ${
-                           isHighlighted ? 'bg-black text-[#ccff00] border-black hover:bg-black/90' : 'bg-[#ccff00] text-black border-[#ccff00] hover:bg-[#b3e600]'
+                           isHighlighted ? 'bg-black text-[#ff7a1a] border-black hover:bg-black/90' : 'bg-[#ff7a1a] text-black border-[#ff7a1a] hover:bg-[#e8680f]'
                          }`}
                        >
                          <span className="w-2 h-2 border-t border-l border-current"></span>
@@ -304,7 +304,7 @@ const Services = () => {
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     className={`w-10 h-10 transition-all duration-300 ${
-                      isHighlighted ? 'text-black' : 'text-[#ccff00]'
+                      isHighlighted ? 'text-black' : 'text-[#ff7a1a]'
                     } ${activeIndex === index ? '-rotate-45' : 'rotate-45'}`} 
                     fill="none" 
                     viewBox="0 0 24 24" 

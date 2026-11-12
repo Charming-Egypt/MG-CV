@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import centerImage from '../assets/hero_assets/me.jpg';
+import centerImage from '../assets/hero_assets/me.png';
 
 const Hero = ({ onPreloadComplete }) => {
   const [text, setText] = useState('MOHAMED');
@@ -149,7 +149,7 @@ const Hero = ({ onPreloadComplete }) => {
         <img
           src={centerImage}
           alt="Mohamed Gamal Abd El-Mohsen"
-          className="w-[90vw] max-w-sm md:max-w-lg object-cover [mask-image:linear-gradient(to_bottom,black_75%,transparent)]"
+          className="w-[90vw] max-w-sm md:max-w-xl object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
         />
       </div>
     </section>

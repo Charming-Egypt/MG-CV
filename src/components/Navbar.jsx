@@ -59,7 +59,7 @@ const Navbar = () => {
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
-              className="text-gray-300 text-sm hover:text-[#ccff00] transition-colors uppercase tracking-wider font-medium"
+              className="text-gray-300 text-sm hover:text-[#ff7a1a] transition-colors uppercase tracking-wider font-medium"
             >
               {item}
             </a>
@@ -68,7 +68,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Icon */}
         <div
-          className="md:hidden text-white cursor-pointer hover:text-[#ccff00] transition-colors relative z-50 p-2"
+          className="md:hidden text-white cursor-pointer hover:text-[#ff7a1a] transition-colors relative z-50 p-2"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? (
@@ -91,7 +91,7 @@ const Navbar = () => {
               key={item}
               href={`#${item.toLowerCase()}`}
               style={{ transitionDelay: `${index * 80}ms` }}
-              className={`text-white text-3xl font-black uppercase tracking-widest hover:text-[#ccff00] transition-all duration-500 ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
+              className={`text-white text-3xl font-black uppercase tracking-widest hover:text-[#ff7a1a] transition-all duration-500 ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
               onClick={() => setIsMenuOpen(false)}
             >
               {item}

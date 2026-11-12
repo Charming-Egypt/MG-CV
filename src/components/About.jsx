@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import aboutImage from '../assets/about_section/me.jpg';
+import aboutImage from '../assets/about_section/me.png';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -140,7 +140,7 @@ const About = () => {
             <img
               src={aboutImage}
               alt="Mohamed Gamal Abd El-Mohsen"
-              className="w-56 md:w-64 lg:w-80 object-cover rounded-3xl border border-[#ccff00]/30 shadow-2xl"
+              className="w-56 md:w-64 lg:w-80 object-contain drop-shadow-2xl"
             />
           </div>
 

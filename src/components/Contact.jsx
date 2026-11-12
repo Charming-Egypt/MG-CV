@@ -127,13 +127,13 @@ const ContactSection = () => {
                         {/* Email */}
                         <div className="block">
                             <p className="text-gray-400 text-sm mb-2">Email:</p>
-                            <a href="mailto:gm@discover-sharm.com" className="text-lg md:text-xl tracking-wide hover:text-[#ccff00] transition-colors break-all">gm@discover-sharm.com</a>
+                            <a href="mailto:gm@discover-sharm.com" className="text-lg md:text-xl tracking-wide hover:text-[#ff7a1a] transition-colors break-all">gm@discover-sharm.com</a>
                         </div>
 
                         {/* Phone */}
                         <div className="block">
                             <p className="text-gray-400 text-sm mb-2">Phone:</p>
-                            <a href="tel:+201061693679" className="text-lg md:text-xl tracking-wide hover:text-[#ccff00] transition-colors">+20 106 169 3679</a>
+                            <a href="tel:+201061693679" className="text-lg md:text-xl tracking-wide hover:text-[#ff7a1a] transition-colors">+20 106 169 3679</a>
                         </div>
 
                         {/* Role / Location */}
