@@ -285,7 +285,7 @@ const Services = () => {
                      {service.buttonText && (
                        <a 
                          href={service.buttonHref || "#projects"} 
-                         target={service.buttonHref?.startsWith('http') || buttonHref?.endsWith('.pdf') ? '_blank' : '_self'}
+                         target={service.buttonHref?.startsWith('http') || service.buttonHref?.endsWith('.pdf') ? '_blank' : '_self'}
                          rel="noopener noreferrer"
                          className={`font-bold uppercase tracking-wider text-xs md:text-sm px-6 py-3 border transition-colors duration-300 ease-in-out inline-flex items-center gap-2 mt-4 cursor-pointer ${
                            isHighlighted ? 'bg-black text-[#ccff00] border-black hover:bg-black/90' : 'bg-[#ccff00] text-black border-[#ccff00] hover:bg-[#b3e600]'
